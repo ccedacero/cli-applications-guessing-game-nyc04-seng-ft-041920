@@ -4,13 +4,13 @@ def run_guessing_game
   num = rand(6) + 1
   # print 'Type a random number and test your skills'+ "\n"
   your_guess = gets.chomp
-  your_guess = your_guess.to_i
+  # your_guess = your_guess.to_i
   equality = num == your_guess
+   if your_guess == 'exit'
+   return print 'Goodbye!'
+  end
   if (equality)
     return print 'You guessed the correct number!'
-  end
-  if your_guess == 'exit'
-   return print 'Goodbye!'
   end
   print "Sorry! The computer guessed #{num}."
 end
