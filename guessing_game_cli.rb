@@ -7,11 +7,11 @@ def run_guessing_game
   your_guess = your_guess.to_i
   equality = num == your_guess
   if (equality)
-    print 'You guessed the correct number!'
-  elsif
-  your_guess == 'exit'
-  print 'Goodbye!'
-else 
+    return print 'You guessed the correct number!'
+  end
+  if your_guess == 'exit'
+   return print 'Goodbye!'
+  end
   print "Sorry! The computer guessed #{num}."
 end
 end
