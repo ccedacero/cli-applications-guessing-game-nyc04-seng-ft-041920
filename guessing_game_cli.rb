@@ -14,4 +14,3 @@ def run_guessing_game
   end
   print "Sorry! The computer guessed #{num}."
 end
-end
